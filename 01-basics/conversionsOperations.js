@@ -77,6 +77,8 @@ console.log(booleanIsHere1); // For empty string will return false and for unemp
 // 0 => false 
 // "" => false
 // "shyam" => true
+// null => false
+// undefined => false
 
 
 
