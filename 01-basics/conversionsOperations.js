@@ -1,3 +1,6 @@
+/* --------Converting into number-------- */
+
+
 let score = "33";
 
 console.log(typeof score); // Return string
@@ -46,6 +49,11 @@ console.log(convertToNumber4); // It will return 1(if false returns 0).
 // "33" => 33
 // "33abc" => NaN
 // true => 1, false => 0
+// undefined => NaN
+// null => 0
+
+
+/* --------Converting into boolean-------- */
 
 let isHere = 0;
 console.log(typeof isHere);
@@ -65,11 +73,14 @@ console.log(typeof booleanIsHere1);
 console.log(booleanIsHere1); // For empty string will return false and for unempty string will return true.
 
 
-// true => 1
-// false => 0
+// 1 => true 
+// 0 => false 
 // "" => false
 // "shyam" => true
 
+
+
+/* --------Converting into string-------- */
 
 let someNumber = false;
 
@@ -77,8 +88,37 @@ let stringNumber = String(someNumber);
 console.log(stringNumber);
 console.log(typeof stringNumber);
 
-// 33 => 33(it is a string)
+// 33(number) => 33(it is a string)
 // null => null
 // undefined => undefined
 // true => true
 // false => false
+
+
+
+
+/* Operations */
+
+let value = 3;
+let negValue = -value;
+
+let str1 = "hello";
+let str2 = " shyam verma";
+let str3 = str1 + str2;
+console.log(str3); 
+
+
+console.log("1" + 2);
+console.log(typeof("1" + 2));
+console.log(1 + "2");
+console.log(typeof(1 + "2"));
+console.log("1" + 2 + 2); // Concatination
+console.log(1 + 2 + "2"); // First done operations then does the concatination.
+
+let x = 3;
+const y = x++; // x++ means post increment that means firstly assign the value y as x then increase the value of x by 1.
+console.log(x, y); // (4, 3) => output
+
+let a = 3;
+const b = ++a; // ++a means pre increment that means firstly add 1 in the value of a then assign it to b.
+console.log(a, b); // (4, 4) => output
