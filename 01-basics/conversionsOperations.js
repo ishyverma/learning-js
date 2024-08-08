@@ -1,3 +1,5 @@
+// (>, <, >=, <=) operators firstly makes the types of both the values same and then checks. 
+
 /* --------Converting into number-------- */
 
 

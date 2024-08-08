@@ -33,3 +33,27 @@ const myFunction = function() {
 
 console.log(typeof myFunction); // typeof function => function
 
+
+
+/* ----------------------Memory---------------------- */
+// Stack memory is used in Primitive datatypes and Heap memory is used in Non-Primitive/Reference datatypes.
+
+let myName = "shyam";
+let fullName = myName; // fullName will get the copy of myName.
+fullName = "shyam verma"; // The change will occur in the copy. 
+console.log(myName); // returns shyam.
+console.log(fullName); // returns shyam verma.
+
+
+
+let userOne = {
+    email: "shyshy@gmail.com",
+    upi: "user@ybl"
+};
+
+let userTwo = userOne; // It will give the reference of userOne.
+
+userTwo.email = "shy@google.com"; // It will change the value of email in userOne.
+
+console.log(userOne.email);  // returns shy@google.com
+console.log(userTwo.email); // returns shy@google.com
