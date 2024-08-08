@@ -1,4 +1,9 @@
+// This is how to make an object literal or non-singleton object.
+
 const mySym = Symbol("key1");
+
+
+console.log(newUser);
 
 const user = {
     fname: "shyam",    
