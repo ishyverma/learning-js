@@ -53,3 +53,15 @@ console.log(tinderUser.hasOwnProperty('isLoggedIn')); // Returns true if it has 
 
 
 
+const course = {
+    courseName: "js",
+    coursePrice: "999",
+    courseInstructor: "Hitesh"
+}
+
+const {courseInstructor: instructor} = course; // syntactical sugar, we can assign a name to the keys by adding ":" and giving the name. It will not change the value of the key in the real object. Use for extracting values from an object.  
+
+console.log(instructor);
+
+
+
