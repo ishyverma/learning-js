@@ -22,3 +22,21 @@ function loginUserMessage(username) {
 }
 console.log(loginUserMessage("Shyam"));
 console.log(loginUserMessage()); // Whenever we dont pass an argument the result will be undefined.
+
+
+
+function calculateCartPrice(...num1) { // This is now the rest operator.
+    return num1; // This will return the array of all the arguments.
+} 
+console.log(calculateCartPrice(200, 300, 400, 500, 600));
+
+
+const user = {
+    username: "shyam",
+    price: 199
+}
+
+function handleObject(anyObject) {
+    console.log(`Username is ${anyObject.username} and price is ${anyObject.price}`);
+};
+handleObject(user);
