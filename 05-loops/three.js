@@ -26,5 +26,5 @@ for(const [key, value] of map) {    // Destructuring of an array (keys and value
     console.log(key, ":-", value);
 }
 
-// Objects are not iterable.
+// Objects are not iterable in for..of loop syntax.
 
