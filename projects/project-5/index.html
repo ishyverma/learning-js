@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>100xDevs</title>
+</head>
+<body>
+    <div>
+      <h1>Todo App ✅</h1>
+      <h2>Hi Shyam!! How are you? 🍷</h2>
+      <h3>Write your todo's here 🙂‍↔️</h3>
+      <input class="myInput" type="text" placeholder="Type your todo here ⌨️">
+      <button onclick="addTodo()">Add Todo 🙂‍↔</button>
+      <div class="myTodo">
+ 
+      </div>
+    </div>
+</body>
+<script>
+  let index = 1
+  function addTodo() {
+    const h4 = document.createElement('h4')
+    const element = document.querySelector('.myInput')
+    const value = element.value
+    h4.innerHTML = "<span>" + index + ".  " + value + "</span> <button onclick='deleteTodo("+ index +")'>Done 🙂‍↔</button>"
+    h4.setAttribute('id', `${index}`)
+    index++
+    const append = document.querySelector('.myTodo')
+    append.appendChild(h4)
+  }
+
+  function deleteTodo(i) {
+    const id = document.getElementById(i) 
+    const parent = document.querySelector('.myTodo')
+    parent.removeChild(id)
+  }
+  
+</script>
+</html>
