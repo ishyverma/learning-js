@@ -1,4 +1,4 @@
-// This is how to make an singleton object.
+// This is how to make a singleton object.
 
 const tinderUser = new Object();
 
